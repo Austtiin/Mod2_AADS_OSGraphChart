@@ -22,11 +22,48 @@
  */
 
 package solution;
-import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class main {
+	moduleFunc func = new moduleFunc();
+	Scanner scanner = new Scanner(System.in);
 	
-	
+	public void run() {
+		System.out.println("MOdule -02 Assignment Stack Implementation");
+		System.out.println("Please enter Module names to be added to the stack (A, B, C…)");
+		System.out.println("Press Enter after each module name");
+		System.out.println("Enter nothing to stop adding modules");
+		String module = scanner.nextLine();
+		
+		if (!module.isEmpty()) {
+			func.push(module);
+			module = scanner.nextLine();
+			System.out.println("Module added.");
+		} else {
+			System.out.println("No modules added");
+		}
+		
+		
+		System.out.println("Modules have been added to the stack");
+		System.out.println("Please select an option");
+		System.out.println("1. Pop");
+		System.out.println("2. Peek");
+		System.out.println("3. Print");
+		int choice = scanner.nextInt();
+		switch (choice) {
+		case 1:
+			func.pop();
+			break;
+		case 2:
+			func.peek();
+			break;
+		case 3:
+			func.print();
+			break;
+		default:
+			System.out.println("Invalid choice");
+		}
+	}
 	
 }
