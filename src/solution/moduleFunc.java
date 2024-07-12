@@ -39,5 +39,17 @@ public class moduleFunc {
 		}
 	}
 	
+	//Print function
+	public void print() {
+		if (stack.size() == 0) {
+			System.out.println("Our stack is empty");
+		} else {
+			for (int i = 0; i < stack.size(); i++) {
+				System.out.println(stack.get(i));
+			}
+		}
+	}
+	
+	
 	
 }
