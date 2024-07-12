@@ -30,37 +30,23 @@ public class main {
 		stack.push("Module D");
 		stack.push("Module E");
 
-		// Peek at the top of the stack
+		
+		System.out.println("Top of the stack: " + stack.peek());
+		System.out.println("Popped: " + stack.pop());
 		System.out.println("Top of the stack: " + stack.peek());
 
-		// Pop the top of the stack
 		System.out.println("Popped: " + stack.pop());
 
-		// Peek at the top of the stack
 		System.out.println("Top of the stack: " + stack.peek());
 
-		// Pop the top of the stack
 		System.out.println("Popped: " + stack.pop());
 
-		// Peek at the top of the stack
 		System.out.println("Top of the stack: " + stack.peek());
 
-		// Pop the top of the stack
 		System.out.println("Popped: " + stack.pop());
 
-		// Peek at the top of the stack
 		System.out.println("Top of the stack: " + stack.peek());
-
-		// Pop the top of the stack
 		System.out.println("Popped: " + stack.pop());
-
-		// Peek at the top of the stack
-		System.out.println("Top of the stack: " + stack.peek());
-
-		// Pop the top of the stack
-		System.out.println("Popped: " + stack.pop());
-
-		// Peek at the top of the stack
 		System.out.println("Top of the stack: " + stack.peek());
 	}
 	
