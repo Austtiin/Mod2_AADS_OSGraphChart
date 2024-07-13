@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>solution</name>
+			<type>2</type>
+			<location>C:/Users/Austin/OneDrive/Documents/GitHub/Mod2_AADS_OSGraphChart/src/solution</location>
+		</link>
+	</linkedResources>
 </projectDescription>

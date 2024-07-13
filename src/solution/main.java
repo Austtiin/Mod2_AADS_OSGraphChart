@@ -25,24 +25,25 @@ package solution;
 import java.util.Scanner;
 
 
+
 public class main {
+	
 	moduleFunc func = new moduleFunc();
 	Scanner scanner = new Scanner(System.in);
 	
+	public static void main(String[] args) {
+        main main = new main();
+        main.run();
+        
 	public void run() {
 		System.out.println("MOdule -02 Assignment Stack Implementation");
 		System.out.println("Please enter Module names to be added to the stack (A, B, C…)");
 		System.out.println("Press Enter after each module name");
 		System.out.println("Enter nothing to stop adding modules");
-		String module = scanner.nextLine();
+		moduleLearn();
+		func.print();
 		
-		if (!module.isEmpty()) {
-			func.push(module);
-			module = scanner.nextLine();
-			System.out.println("Module added.");
-		} else {
-			System.out.println("No modules added");
-		}
+		
 		
 		
 		System.out.println("Modules have been added to the stack");
@@ -64,6 +65,24 @@ public class main {
 		default:
 			System.out.println("Invalid choice");
 		}
+	}
+
+	private void moduleLearn() {
+		int x = 0;
+		while (x != 1) {
+			System.out.println("Enter module name: ");
+			String module = scanner.nextLine();
+			
+			if (!module.isEmpty()) {
+				func.push(module);
+				module = scanner.nextLine();
+				
+			} else {
+				x = 1;
+				System.out.println("No modules added, moving on...");
+			}
+		}
+		
 	}
 	
 }
